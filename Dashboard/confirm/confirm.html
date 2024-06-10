@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save Data to Database</title>
+    <link rel="stylesheet" href="confirm.css">
+    <script src="confirm.js"></script>
+</head>
+<body>
+    <h1>Confirmer la reservation d'une robe</h1>
+    <form action="../confirm/confirm.php" method="post">
+        <div class="form-group">
+            <label>Numero de robe</label>
+            <input type="text" id="numrobe" name="numrobe" required>
+        </div>
+        <div class="form-group">
+            <label >Numero de client:</label>
+            <input type="text" id="numclt" name="numclt" required>
+        </div>
+        <div class="form-group">
+            <label >date debut de reservation:</label>
+            <input type="date" id="datedeb" name="datedeb" required>
+        </div>
+        <div class="form-group">
+            <label>date fin de reservation:</label>
+            <input type="date" id="datefin" name="datefin" required>
+        </div>
+        <button type="submit" onclick="return validateconfirm()">enregistrer</button>
+    </form>
+</body>
+</html>

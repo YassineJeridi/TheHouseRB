@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--- The house RB -->
+  <title>The house RB : EWA</title>
+<!--- favicon-->
+<link rel="shortcut icon" href="../../assets/images/service-image.png" type="image/svg+xml">
+
+<!--- custom css link-->
+<link rel="stylesheet" href="../../products/detailproduit.css">
+
+
+<!--- google font link-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
+  rel="stylesheet">
+
+<!--- preload image --> 
+<link rel="preload" as="image" href="../../assets/images/topbanner.png">
+<script src="../../products/rendezvous.js"></script>
+</head>
+
+<body id="top">
+<!--- #HEADER -->
+
+<header class="header" data-header>
+  <div class="container">
+
+    <button class="nav-toggle-btn" aria-label="toggle manu" data-nav-toggler>
+      <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+      <ion-icon name="close-outline" aria-label="true" class="close-icon"></ion-icon>
+    </button>
+    <a href="../index.html" class="logo">The house RB</a>
+
+    <nav class="navbar" data-navbar>
+      <ul class="navbar-list">
+        
+        <li class="navbar-item">
+          <a href="../../index.html" class="navbar-link" data-nav-link>Home</a>
+        </li>
+
+        <li class="navbar-item">
+          <a href="../collection.html" class="navbar-link" data-nav-link>Collections</a>
+        </li>
+
+        <li class="navbar-item">
+          <a href="../../contact/contact.html" class="navbar-link" data-nav-link>Contact</a>
+        </li>
+
+      </ul>
+
+  
+    </nav>
+
+    <div class="header-actions">
+
+      <a href="../../Login/login.html">
+        <button class="action-btn user" aria-label="User">
+          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </a>
+
+    </div>
+
+  </div>
+</header>
+
+
+<main>
+  <article>
+  <!--- #HERO-->
+
+      <img src="../../assets/images/topbanner.png" alt="" class="cta">
+    </section>
+  
+
+
+      <section class="section product" id="shop" aria-label="product">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            <span class="span">Notre </span> Collection
+          </h2>
+          <brnn>
+          <br>
+          <br>
+          <br>
+
+
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="../../assets/images/4 x 4 image size/image00009.png" width="360" height="360" loading="lazy"
+                    class="img-cover default">
+                  <img src="../../assets/images/4 x 4 image size/image000010.png" width="360" height="360" loading="lazy"
+                   class="img-cover hover">
+                </div>
+              </div>
+            </li>
+            <li>
+
+
+
+
+                   
+              <div class="product-card">
+                <p class="nomrobe"> EWA </p>
+                  <section class="hero has-bg-image" aria-label="home">
+                    <div class="container">
+                      <p class="Description-title"> Prendre un rendez - vous </p>
+                      <hr>
+                      <br>
+                      <form action="../rendez_vous.php" method="post"> 
+                        <div class="Description">
+                          <input type="text" name="name" id="name" class="name" placeholder="&nbsp; entrer votre nom " required>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <input type="text" name="tel" id="tel" class="name" placeholder="&nbsp; entrer votre Telephone " required>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <input type="date" name="date" id="date" required>
+                        </div>
+                        <br>
+                        <div class="select-container">
+                        <select name="taille" id="taille">
+                          <option value="0">Choisir votre taille</option>
+                          <option value=" 32 "> 32 </option>
+                          <option value=" 33 "> 33 </option>
+                          <option value=" 34 "> 34 </option>
+                          <option value=" 35 "> 35 </option>
+                          <option value=" 36 "> 36 </option>
+                          <option value=" 37 "> 37 </option>
+                          <option value=" 38 "> 38 </option>
+                          <option value=" 39 "> 39 </option>
+                          <option value=" 40 "> 40 </option>
+                          <option value=" 41 "> 41 </option>
+                          <option value=" 42 "> 42 </option>
+                          <option value=" 43 "> 43 </option>
+                          <option value=" 44 "> 44 </option>
+                          <option value=" 45 "> 45 </option>
+                          <option value=" 46 "> 46 </option>
+                          <option value=" 47 "> 47 </option>
+                          <option value=" 48 "> 48 </option>
+                          <option value=" 49 "> 49 </option>
+                          <option value=" 50 "> 50 </option>
+                          <option value=" 51 "> 51 </option>
+                          <option value=" 52 "> 52 </option>
+                          <option value=" 53 "> 53 </option>
+                          <option value=" 54 "> 54 </option>
+                        </select> 
+                        <input type="checkbox" name="numrobe" id="numrobe" value="5" hidden checked>
+                        <input type="submit" value="valider le rendez-vous" onclick="return valider_rendez_vous()" class="btn">
+                        </div>
+                      </form>
+
+
+
+
+                  <p class="Description-title">
+                    Plus d'informations
+                  <p>
+                    <hr>
+                    <br>
+                  <p class="Description">
+                    Taille et coupe : &nbsp; 32 à 54
+                    <br>
+                    Silhouette: &nbsp; Flux A-ligne
+                    <br>
+                    Neckline: &nbsp; Haut
+                    <br>
+                    Fabrics:  &nbsp; Tulle
+                    <br>
+                    Back type: &nbsp; Illusion
+                    <br>
+                    Sleeves: &nbsp; Long
+                    <br>
+                    Waist style: &nbsp; Taille naturelle
+                    <br>
+                  </p>
+                
+                  </div>
+                  </section>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="faq">
+                <p class="Description-title">
+                  FAQs : 
+                <p>
+                <hr class="line-faq">
+                <p class="faq-content">
+                    
+                  PUIS-JE PERSONNALISER CETTE ROBE ?
+                  <br>
+                  
+                  Oui, selon le modèle, des modifications peuvent être apportées à la longueur du train, à la longueur des manches et à la forme et/ou à la profondeur de l'encolure.
+                  <br>
+                  <br>
+                  COMBIEN DE TEMPS À L'AVANCE DOIS-JE COMMANDER MA ROBE ?
+                  <br>
+                  Il est recommandé de commander votre robe 9 à 12 mois avant la date du mariage. Nous avons également des robes qui sont prêtes à être essayées et ramenées à la maison le même jour.
+                </p>
+                <br>               
+              </div>    
+          </ul>
+        </div>
+      </section>
+      <section class="section brand" aria-label="brand">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            <span class="span">Nos</span>  partenaires
+          </h2>
+          <hr>
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="brand-card " style="--width: 150; --height: 150;">
+                <img src="../../assets/images/logo/channel.png" width="150" height="150" loading="lazy" alt="brand logo"
+                  class="img-cover">
+              </div>
+            </li>
+
+            <li>
+              <div class="brand-card " style="--width: 150; --height: 150;">
+                <img src="../../assets/images/logo/Oscar de la renta.png" width="150" height="150" loading="lazy" alt="brand logo"
+                  class="img-cover">
+              </div>
+            </li>
+
+            <li>
+              <div class="brand-card " style="--width: 150; --height: 150;">
+                <img src="../../assets/images/logo/stradicarius.png" width="150" height="150" loading="lazy" alt="brand logo"
+                  class="img-cover">
+              </div>
+            </li>
+
+            <li>
+              <div class="brand-card " style="--width: 150; --height: 150;">
+                <img src="../../assets/images/logo/zen.png" width="150" height="150" loading="lazy" alt="brand logo"
+                  class="img-cover">
+              </div>
+            </li>
+
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" style="background-image: url('../../assets/images/footer-bg.jpg')">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+          <br>
+          <br>
+          <br>
+          <a href="#" class="logo">The house RB</a>
+
+          <p class="footer-text">
+            Si vous avez des questions, veuillez nous contacter à <a href="mailto:support@gmail.com"
+              class="link">support@gmail.com</a>
+          </p>
+
+          <ul class="contact-list">
+
+            <li class="contact-item">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+              <address class="address">
+                votre localisation
+              </address>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+              <a href="tel:+16234567891011" class="contact-link">(+216) 77 777 777</a>
+            </li>
+
+          </ul>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Corporatif</p>
+          </li>
+          <li>
+            <a href="#" class="footer-link">À propos de nous</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contactez-nous</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">FAQs</a>
+          </li>
+
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Information</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Magasin en ligne</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Politique de confidentialité</a>
+          </li>
+
+
+          <li>
+            <a href="#" class="footer-link">Conditions de service</a>
+          </li>
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Services</p>
+          </li>
+
+
+          <li>
+            <a href="#" class="footer-link">location de robes</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 Fait avec ♥ par moi
+        </p>
+      </div>
+    </div>
+
+  </footer>
+
+
+  <!-- 
+    - custom js link
+  -->
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
